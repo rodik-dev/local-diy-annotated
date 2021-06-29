@@ -8,6 +8,7 @@ export default function makeAnnotationAttribute(arr) {
             acc += objectId + ':'
         }
 
-                
+        acc += fieldPath;
+        if (location)        
     }).join(' ');
 }
