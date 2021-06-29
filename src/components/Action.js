@@ -31,6 +31,10 @@ export default class Action extends React.Component {
             attrs.rel = [(newWindow ? 'noopener' : ''), (noFollow ? 'nofollow' : '')].filter(Boolean).join(' ');
         }
 
+        const annotations = [
+            
+        ];
+
         return (
             <Link href={withPrefix(url)} {...attrs} className={classes} data-sb-field-path={`.url#@href ${!showIcon ? '.label' : ''}`}>
                 {(hasIcon && icon) ? (
