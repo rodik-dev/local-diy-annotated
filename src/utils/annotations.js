@@ -1,5 +1,5 @@
 export default function makeAnnotation(arr) {
-    arr.map((acc, [objectId, fieldPath, location]) => {
+    return arr.map((acc, [objectId, fieldPath, location]) => {
         
         if (objectId) {
             acc += ''
