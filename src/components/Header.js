@@ -94,8 +94,8 @@ export default class Header extends React.Component {
                                                 <span className="sr-only">Close</span>
                                             </button>
                                             <div className="navbar__menu flex-md">
-                                                {hasPrimaryNav && !_.isEmpty(primaryNavLinks) && this.renderNavLinks(primaryNavLinks, pageUrl)}
-                                                {hasSecondaryNav && !_.isEmpty(secondaryNavLinks) && this.renderNavLinks(secondaryNavLinks, pageUrl)}
+                                                {hasPrimaryNav && !_.isEmpty(primaryNavLinks) && this.renderNavLinks(primaryNavLinks, pageUrl, 'primary_nav_links')}
+                                                {hasSecondaryNav && !_.isEmpty(secondaryNavLinks) && this.renderNavLinks(secondaryNavLinks, pageUrl, 'secondary_nav_links')}
                                             </div>
                                         </div>
                                     </div>
