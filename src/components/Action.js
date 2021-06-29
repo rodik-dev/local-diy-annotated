@@ -38,7 +38,7 @@ export default class Action extends React.Component {
         if (!showIcon) { annotations.push([null, '.label', null]) }
 
         return (
-            <Link href={withPrefix(url)} {...attrs} className={classes} data-sb-field-path={makeAnnotationAttribute(annotations)}>
+            <Link href={withPrefix(url)} {...attrs} className={classes} data-sb-field-path={makeAnnotation(annotations)}>
                 {(hasIcon && icon) ? (
                     <React.Fragment>
                         <Icon icon={icon} />
