@@ -32,7 +32,7 @@ export default class Action extends React.Component {
         }
 
         return (
-            <Link href={withPrefix(url)} {...attrs} className={classes} data-sb-field-path=".label">
+            <Link href={withPrefix(url)} {...attrs} className={classes} data-sb-field-path={`${!showIcon && '.label'} .url#@href`}>
                 {(hasIcon && icon) ? (
                     <React.Fragment>
                         <Icon icon={icon} />
