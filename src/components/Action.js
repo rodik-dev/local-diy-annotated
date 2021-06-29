@@ -48,7 +48,6 @@ export default class Action extends React.Component {
                                 'order-first': iconPos === 'right',
                                 'sr-only': iconPos === 'center'
                             })}
-                            data-sb-field-path=".label"
                         >
                             {label}
                         </span>
