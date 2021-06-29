@@ -1,5 +1,5 @@
 export default function makeAnnotation(arr) {
-    arr.reduce((acc, item) => {
+    arr.reduce((acc, []) => {
         return acc += ` ${}`
     }, '')
     return condition ? { [name]: value } : null;
