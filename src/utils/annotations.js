@@ -9,6 +9,8 @@ export default function makeAnnotationAttribute(arr) {
         }
 
         acc += fieldPath;
-        if (location)        
+        if (location) {
+            acc += 
+        }
     }).join(' ');
 }
