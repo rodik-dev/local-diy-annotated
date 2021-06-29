@@ -32,7 +32,7 @@ export default class Action extends React.Component {
         }
 
         const annotations = [
-            
+            []
         ];
 
         return (
