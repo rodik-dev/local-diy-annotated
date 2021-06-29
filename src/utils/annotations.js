@@ -10,7 +10,7 @@ export default function makeAnnotationAttribute(arr) {
 
         acc += fieldPath;
         if (location) {
-            acc += 
+            acc += '#'
         }
     }).join(' ');
 }
