@@ -1,6 +1,6 @@
 /**
  * 
- * @param {*} arr array of arrays of annotaion 
+ * @param {*} arr array of arrays of annotaion specifiers
  */
 export default function makeAnnotation(arr) {
     return arr.map(([objectId, fieldPath, location]) => {
