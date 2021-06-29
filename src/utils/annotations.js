@@ -5,6 +5,5 @@ export default function makeAnnotation(arr) {
             acc += ''
         }
         
-    }, '')
-    return condition ? { [name]: value } : null;
+    }).join(' ');
 }
