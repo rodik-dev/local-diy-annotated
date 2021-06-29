@@ -34,12 +34,12 @@ export default class Action extends React.Component {
 
         const annotations = [
             '.url/@href',
-            
+
         ];
         if (!showIcon) { 
             annotations.push('.label')
         } else {
-            annotations.push('.label/span[1]');
+            annotations.push();
             annotations.push('.icon/svg[1]');
         }
 
