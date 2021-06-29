@@ -1,4 +1,4 @@
 export default function makeAnnotation(arr) {
-    arr.reduce((annotation))
+    arr.reduce((str))
     return condition ? { [name]: value } : null;
 }
