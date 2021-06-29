@@ -35,7 +35,8 @@ export default class Action extends React.Component {
         const annotations = [
             [null, '.url', '@href']
         ];
-        if (!showIcon) { annotations.push([null, '.label', null]) }
+        if (!showIcon) { 
+            annotations.push([null, '.label', null]) }
 
         return (
             <Link href={withPrefix(url)} {...attrs} className={classes} data-sb-field-path={makeAnnotation(annotations)}>
