@@ -96,7 +96,7 @@ export default class Header extends React.Component {
                                             </button>
                                             <div className="navbar__menu flex-md">
                                                 {hasPrimaryNav && !_.isEmpty(primaryNavLinks) && this.renderNavLinks(primaryNavLinks, pageUrl, 'primary')}
-                                                {hasSecondaryNav && !_.isEmpty(secondaryNavLinks) && this.renderNavLinks(secondaryNavLinks, pageUrl, 'secondary_nav_links')}
+                                                {hasSecondaryNav && !_.isEmpty(secondaryNavLinks) && this.renderNavLinks(secondaryNavLinks, pageUrl, 'secondary')}
                                             </div>
                                         </div>
                                     </div>
