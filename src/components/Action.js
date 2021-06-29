@@ -3,7 +3,7 @@ import _ from 'lodash';
 
 import { Link, withPrefix, classNames } from '../utils';
 import Icon from './Icon';
-import makeAnnotationAttribute from '../utils/annotations';
+import {makeAnnotation} from '../utils/annotations';
 
 export default class Action extends React.Component {
     render() {
