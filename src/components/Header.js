@@ -94,7 +94,7 @@ export default class Header extends React.Component {
                                                 <Icon icon={'close'} />
                                                 <span className="sr-only">Close</span>
                                             </button>
-                                            <div className="navbar__menu flex-md" data-sb-field-path=".has_primary_nav">
+                                            <div className="navbar__menu flex-md" data-sb-field-path=".has_primary_nav .has_secondary_nav">
                                                 {hasPrimaryNav && !_.isEmpty(primaryNavLinks) && this.renderNavLinks(primaryNavLinks, pageUrl, 'primary')}
                                                 {hasSecondaryNav && !_.isEmpty(secondaryNavLinks) && this.renderNavLinks(secondaryNavLinks, pageUrl, 'secondary')}
                                             </div>
