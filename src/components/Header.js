@@ -83,7 +83,7 @@ export default class Header extends React.Component {
                         <Link className="sr-only" href="#content">Skip to main content</Link>
                         <div className="navbar__branding mr-2">
                             {logo ? <Link className="navbar__logo m-0" href={withPrefix('/')}><img src={withPrefix(logo)} alt={logoAlt} /></Link>
-                                : <Link className="navbar__title h4 m-0" href={withPrefix('/')}>{title}</Link>}
+                                : <Link className="navbar__title h4 m-0" href={withPrefix('/')} data-sb-field-path=".title">{title}</Link>}
                         </div>
                         {((hasPrimaryNav && !_.isEmpty(primaryNavLinks)) || (hasSecondaryNav && !_.isEmpty(secondaryNavLinks))) && (
                             <React.Fragment>
