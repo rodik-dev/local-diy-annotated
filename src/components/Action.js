@@ -39,7 +39,7 @@ export default class Action extends React.Component {
             annotations.push([null, '.label', null])
         } else {
             annotations.push([null, '.label', 'span[1]']);
-            annotations.push([null, '.icon', 'svg[1]/@']);
+            annotations.push([null, '.icon', 'svg[1]/@self']);
         }
 
         return (
