@@ -38,7 +38,7 @@ export default class Action extends React.Component {
 
         ];
         if (!showIcon) { 
-        } else {
+
             annotations.push('.icon/svg[1]');
         }
 
