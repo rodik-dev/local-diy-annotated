@@ -6,13 +6,13 @@ export default function makeAnnotationAttribute(arr) {
     return arr.map(([objectId, fieldPath, location]) => {
         let str = '';
         if (objectId) {
-            acc += objectId + ':'
+            str += objectId + ':'
         }
 
-        acc += fieldPath;
+        str += fieldPath;
         if (location) {
-            acc += '#' + location;
+            str += '#' + location;
         }
-        return acc;
+        return str;
     }).join(' ');
 }
