@@ -7,6 +7,7 @@ export default function makeAnnotationAttribute(arr) {
         if (objectId) {
             acc += objectId + ':'
         }
-        
+
+                
     }).join(' ');
 }
