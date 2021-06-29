@@ -10,7 +10,7 @@ export default class Footer extends React.Component {
     renderNav(navLinks, navTitle, navKey) {
         return (
             <div className="site-footer__menu cell-12 cell-md my-3 my-md-4">
-                {navTitle && <h2 className="h4 mb-3 mb-md-4" data-sb-field-path={``.primary_nav_title">{navTitle}</h2>}
+                {navTitle && <h2 className="h4 mb-3 mb-md-4" data-sb-field-path={``.primary_nav_title]>{navTitle}</h2>}
                 <ul className="menu">
                     {_.map(navLinks, (action, index) => (
                         <li key={index} className="menu__item mb-1">
