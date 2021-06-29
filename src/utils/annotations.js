@@ -4,7 +4,7 @@
  */
 export default function makeAnnotationAttribute(arr) {
     return arr.map(([objectId, fieldPath, location]) => {
-        let str = ''
+        let str = '';
         if (objectId) {
             acc += objectId + ':'
         }
