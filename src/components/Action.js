@@ -32,8 +32,8 @@ export default class Action extends React.Component {
         }
 
         const annotations = [
+            ...([null, '.label', null]),
             [null, '.url', '@href'],
-            [null, '.label', null],
             [null, '.url', '@href'],
         ];
 
