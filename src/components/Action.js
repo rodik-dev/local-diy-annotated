@@ -3,6 +3,7 @@ import _ from 'lodash';
 
 import { Link, withPrefix, classNames } from '../utils';
 import Icon from './Icon';
+import makeAnnotationAttribute from '../utils/annotations';
 
 export default class Action extends React.Component {
     render() {
@@ -37,7 +38,7 @@ export default class Action extends React.Component {
         if (!showIcon) { annotations.push([null, '.label', null]) }
 
         return (
-            <Link href={withPrefix(url)} {...attrs} className={classes} data-sb-field-path={`.url#@href ${!showIcon ? '.label' : ''}`}>
+            <Link href={withPrefix(url)} {...attrs} className={classes} data-sb-field-path={makeAnnotationAttribute}>
                 {(hasIcon && icon) ? (
                     <React.Fragment>
                         <Icon icon={icon} />
