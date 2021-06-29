@@ -54,7 +54,6 @@ export default class Header extends React.Component {
                                 'menu__item-btn': actionStyle !== 'link'
                             })}
                             data-sb-field-path={`.${index}`}
-
                         >
                             <Action action={action} />
                         </li>
