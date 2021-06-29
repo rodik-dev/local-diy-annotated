@@ -12,5 +12,6 @@ export default function makeAnnotationAttribute(arr) {
         if (location) {
             acc += '#' + location;
         }
+        return acc;
     }).join(' ');
 }
