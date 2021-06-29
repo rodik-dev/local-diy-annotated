@@ -36,7 +36,7 @@ export default class Action extends React.Component {
             '.url/@href'
         ];
         if (!showIcon) { 
-            annotations.push([null, '.label', null])
+            annotations.push([null, '.label')
         } else {
             annotations.push([null, '.label', 'span[1]']);
             annotations.push([null, '.icon', 'svg[1]']);
