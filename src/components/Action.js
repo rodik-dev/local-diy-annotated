@@ -35,7 +35,7 @@ export default class Action extends React.Component {
             [null, '.url', '@href'],
             [null, '.url', '@href'],
         ];
-        if (!showIcon) { annotations.push(...(!showIcon ? [[null, '.label', null]) }
+        if (!showIcon) { annotations.push([null, '.label', null]) }
 
         return (
             <Link href={withPrefix(url)} {...attrs} className={classes} data-sb-field-path={`.url#@href ${!showIcon ? '.label' : ''}`}>
