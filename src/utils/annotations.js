@@ -1,4 +1,4 @@
-export default function makeAnnotation(name, value, condition) {
+export default function makeAnnotation(arr) {
     if (typeof condition === 'undefined') {
         condition = true;
     }
