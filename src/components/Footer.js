@@ -7,7 +7,7 @@ import ActionIcon from './ActionIcon';
 import ActionLink from './ActionLink';
 
 export default class Footer extends React.Component {
-    renderNav(navLinks, navTitle) {
+    renderNav(navLinks, navTitle, navKey) {
         return (
             <div className="site-footer__menu cell-12 cell-md my-3 my-md-4">
                 {navTitle && <h2 className="h4 mb-3 mb-md-4">{navTitle}</h2>}
