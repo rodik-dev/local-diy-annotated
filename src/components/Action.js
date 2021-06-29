@@ -38,7 +38,7 @@ export default class Action extends React.Component {
         if (!showIcon) { 
             annotations.push([null, '.label', null])
         } else {
-            annotations.push([null, '.label', null]);
+            annotations.push([null, '.label', 'span[1]']);
         }
 
         return (
