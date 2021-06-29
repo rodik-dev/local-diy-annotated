@@ -34,7 +34,7 @@ export default class Action extends React.Component {
 
         const annotations = [
             '.url/@href',
-            `.label/span[1]`
+            `.label${/span[1]`
         ];
         if (!showIcon) { 
             annotations.push('.label')
