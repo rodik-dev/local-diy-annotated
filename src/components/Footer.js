@@ -11,7 +11,7 @@ export default class Footer extends React.Component {
         return (
             <div className="site-footer__menu cell-12 cell-md my-3 my-md-4">
                 {navTitle && <h2 className="h4 mb-3 mb-md-4" data-sb-field-path={`.${navKey}_nav_title`}>{navTitle}</h2>}
-                <ul className="menu">
+                <ul className="menu" data-sb-field-path={`.${navKey}_nav_link`}>
                     {_.map(navLinks, (action, index) => (
                         <li key={index} className="menu__item mb-1">
                             <Action action={action} />
