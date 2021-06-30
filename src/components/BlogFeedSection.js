@@ -193,6 +193,7 @@ export default class BlogFeedSection extends React.Component {
                     'pb-6': paddingBottom === 'medium' || paddingBottom === 'large',
                     'pb-md-7': paddingBottom === 'large'
                 })}
+                data-sb-field-path={this.props.annotationPrefix}
             >
                 {backgroundImage && <SectionBackground section={section} />}
                 {(title || subtitle) && (
@@ -220,6 +221,7 @@ export default class BlogFeedSection extends React.Component {
                                 'justify-center': alignX === 'center',
                                 'justify-end': alignX === 'right'
                             })}
+                            data-sb-field-path=".actions"
                         >
                             <SectionActions actions={actions} />
                         </div>

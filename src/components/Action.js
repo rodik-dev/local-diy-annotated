@@ -3,7 +3,6 @@ import _ from 'lodash';
 
 import { Link, withPrefix, classNames } from '../utils';
 import Icon from './Icon';
-import { makeAnnotation } from '../utils/annotations';
 
 export default class Action extends React.Component {
     render() {
@@ -32,11 +31,12 @@ export default class Action extends React.Component {
             attrs.rel = [(newWindow ? 'noopener' : ''), (noFollow ? 'nofollow' : '')].filter(Boolean).join(' ');
         }
 
+        const annotationPrefix = _.get(this.props, 'annotationPrefix', '');
         const annotations = [
-            '.url#@href',
-            `.label${showIcon ? '#span[1]' : ''}`
+            `${annotationPrefix}.url#@href`,
+            `${annotationPrefix}.label${showIcon ? '#span[1]' : ''}`
         ];
-        if (showIcon) { annotations.push('.icon#svg[1]') }
+        if (showIcon) { annotations.push(`${annotationPrefix}.icon#svg[1]`) }
 
         return (
             <Link href={withPrefix(url)} {...attrs} className={classes} data-sb-field-path={annotations.join(' ')}>

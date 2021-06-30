@@ -45,6 +45,7 @@ export default class GridItem extends React.Component {
                     'my-2': gridGapY !== 'small',
                     'my-sm-3': gridGapY === 'large'
                 })}
+                data-sb-field-path={`.${this.props.index}`}
             >
                 <div
                     className={classNames('item', {
@@ -159,6 +160,7 @@ export default class GridItem extends React.Component {
                                                 'justify-center': actionsAlignX === 'center',
                                                 'justify-end': actionsAlignX === 'right'
                                             })}
+                                            data-sb-field-path=".actions"
                                         >
                                             <SectionActions actions={actions} />
                                         </div>

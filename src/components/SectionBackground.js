@@ -22,6 +22,7 @@ export default class SectionBackground extends React.Component {
                     backgroundPosition: backgroundImagePosition,
                     backgroundRepeat: backgroundImageRepeat
                 }}
+                data-sb-field-path=".background_image background_image_opacity background_image_size background_image_position background_image_repeat"
             />
         );
     }
