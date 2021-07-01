@@ -98,6 +98,7 @@ export default class GridItem extends React.Component {
                                             'mx-auto': imageAlignX === 'center',
                                             'ml-auto': imageAlignX === 'right'
                                         })}
+                                        data-sb-field-path=".image#@src"
                                     />
                                 </div>
                             </div>
@@ -130,8 +131,8 @@ export default class GridItem extends React.Component {
                                     })}
                                 >
                                     {title && (
-                                        sectionTitle ? <h3 className={titleClasses}>{title}</h3>
-                                            : <h2 className={titleClasses}>{title}</h2>
+                                        sectionTitle ? <h3 className={titleClasses} data-sb-field-path=".title">{title}</h3>
+                                            : <h2 className={titleClasses} data-sb-field-path=".title">{title}</h2>
                                     )}
                                     {subtitle && (
                                         <p
@@ -139,6 +140,7 @@ export default class GridItem extends React.Component {
                                                 'text-center': titleAlignX === 'center',
                                                 'text-right': titleAlignX === 'right'
                                             })}
+                                            data-sb-field-path=".subtitle"
                                         >
                                             {subtitle}
                                         </p>
@@ -149,6 +151,7 @@ export default class GridItem extends React.Component {
                                                 'text-center': contentAlignX === 'center',
                                                 'text-right': contentAlignX === 'right'
                                             })}
+                                            data-sb-field-path=".content"
                                         >
                                             {markdownify(content)}
                                         </div>

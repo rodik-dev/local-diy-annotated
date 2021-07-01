@@ -20,7 +20,7 @@ export default class BlogPostAuthor extends React.Component {
 
         if (author.link) {
             return (
-                <div className={containerClass}>
+                <div className={containerClass} data-sb-field-path=".author">
                     <Link className="flex items-center" href={withPrefix(author.link)}>
                         {authorAvatar && (
                             <figure
@@ -28,10 +28,10 @@ export default class BlogPostAuthor extends React.Component {
                                     'avatar--small': avatarSize === 'small'
                                 })}
                             >
-                                <img className="avatar__img" src={withPrefix(authorAvatar)} alt={authorAvatarAlt} />
+                                <img className="avatar__img" src={withPrefix(authorAvatar)} alt={authorAvatarAlt} data-sb-field-path=".photo"/>
                             </figure>
                         )}
-                        <span>{_.trim(`${authorFirstName} ${authorLastName}`)}</span>
+                        <span data-sb-field-path=".first_name .last_name">{_.trim(`${authorFirstName} ${authorLastName}`)}</span>
                     </Link>
                 </div>
             );
@@ -45,10 +45,10 @@ export default class BlogPostAuthor extends React.Component {
                                     'avatar--small': avatarSize === 'small'
                                 })}
                             >
-                                <img className="avatar__img" src={withPrefix(authorAvatar)} alt={authorAvatarAlt} />
+                                <img className="avatar__img" src={withPrefix(authorAvatar)} alt={authorAvatarAlt} data-sb-field-path=".photo"/>
                             </figure>
                         )}
-                        <span>{_.trim(`${authorFirstName} ${authorLastName}`)}</span>
+                        <span data-sb-field-path=".first_name .last_name">{_.trim(`${authorFirstName} ${authorLastName}`)}</span>
                     </div>
                 </div>
             );
