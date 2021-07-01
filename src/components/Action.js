@@ -33,6 +33,7 @@ export default class Action extends React.Component {
 
         const annotationPrefix = _.get(this.props, 'annotationPrefix', '');
         const annotations = [
+            `${annotationPrefix}`,
             `${annotationPrefix}.url#@href`,
             `${annotationPrefix}.label${showIcon ? '#span[1]' : ''}`
         ];

@@ -86,7 +86,7 @@ export default class BlogFeedSection extends React.Component {
                 className={classNames('cell-12', 'cell-md-6', 'my-2', {
                     'cell-lg-4': sectionColumns === 'three'
                 })}
-                data-sb-field-path={`.${index}`}
+                data-sb-field-path={`.posts.${index}`}
             >
                 <div
                     className={classNames('item', {
@@ -104,7 +104,7 @@ export default class BlogFeedSection extends React.Component {
                                     'card__media--top': isCard
                                 })}
                             >
-                                <Link href={postUrl}><img src={withPrefix(image)} alt={imageAlt} data-sb-field-path=".image#@src"/></Link>
+                                <Link href={postUrl}><img src={withPrefix(image)} alt={imageAlt} data-sb-field-path=".image.url#@src"/></Link>
                             </div>
                         )}
                         <div
@@ -121,11 +121,11 @@ export default class BlogFeedSection extends React.Component {
                                 <div className="item__meta mb-1">
                                     {!_.isEmpty(categories) && showCategories && (
                                         <React.Fragment>
-                                            <BlogPostCategories categories={categories} data={data} containerClass={'item__cat'} />
+                                            <BlogPostCategories categories={categories} data={data} containerClass={'item__cat'} annotationPrefix=".categories" />
                                             {showDate && <span className="item__meta-sep"> &middot; </span>}
                                         </React.Fragment>
                                     )}
-                                    {showDate && <span className="item__date"><time dateTime={dateTimeAttr}>{formattedDate}</time></span>}
+                                    {showDate && <span className="item__date"><time dateTime={dateTimeAttr} data-sb-field-path=".date">{formattedDate}</time></span>}
                                 </div>
                             )}
                             {sectionTitle ? (
@@ -149,7 +149,7 @@ export default class BlogFeedSection extends React.Component {
                             )}
                             {excerpt && showExcerpt && <div className="item__copy"><p data-sb-field-path=".excerpt">{excerpt}</p></div>}
                             {author && showAuthor && (
-                                <BlogPostAuthor author={author} data={data} containerClass={'item__byline'} avatarSize={'small'} />
+                                <BlogPostAuthor author={author} data={data} containerClass={'item__byline'} avatarSize={'small'} annotationPrefix=".author" />
                             )}
                         </div>
                     </div>

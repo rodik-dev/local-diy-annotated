@@ -103,7 +103,7 @@ export default class Body extends React.Component {
                     <body className={classNames(`layout-${layoutType}`, `style-${style}`, `palette-${palette}`, `mode-${mode}`, `font-${font}`)} />
                 </Helmet>
                 <div id="site-wrap" className="site" data-sb-object-id={page.__metadata.id}>
-                    {hasAnncmnt && anncmntContent && <Announcement page={page} anncmnt={anncmnt} />}
+                    {hasAnncmnt && anncmntContent && <Announcement page={page} anncmnt={anncmnt} annotationPrefix={`announcement`}/>}
                     <Header page={page} config={config} />
                     <main id="content" className="site-content" {...annotationProps}>
                         {this.props.children}

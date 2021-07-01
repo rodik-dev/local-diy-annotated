@@ -53,7 +53,7 @@ export default class FeaturesSection extends React.Component {
                                         'mx-auto': alignX === 'center',
                                         'ml-auto': alignX === 'right'
                                     })}
-                                    data-sb-field-path=".image#@src .image_alt#@alt"
+                                    data-sb-field-path=".image.url#@src .image_alt#@alt"
                                 />}
                         </div>
                     )}

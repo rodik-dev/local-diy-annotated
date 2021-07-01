@@ -51,7 +51,7 @@ export default class Footer extends React.Component {
                                     'justify-md-center': logo
                                 })}
                             >
-                                {logo && <Link className="site-footer__logo cell-12 cell-md-5 my-4" href={withPrefix('/')}><img src={withPrefix(logo)} alt={logoAlt} data-sb-field-path=".logo#@src" /></Link>}
+                                {logo && <Link className="site-footer__logo cell-12 cell-md-5 my-4" href={withPrefix('/')}><img src={withPrefix(logo)} alt={logoAlt} data-sb-field-path=".logo.url#@src" /></Link>}
                                 {hasPrimaryNav && !_.isEmpty(primaryNavLinks) && this.renderNav(primaryNavLinks, primaryNavTitle, 'primary')}
                                 {hasSecondaryNav && !_.isEmpty(secondaryNavLinks) && this.renderNav(secondaryNavLinks, secondaryNavTitle, 'secondary')}
                                 {hasTertiaryNav && !_.isEmpty(tertiaryNavLinks) && this.renderNav(tertiaryNavLinks, tertiaryNavTitle, 'tertiary')}
@@ -69,7 +69,7 @@ export default class Footer extends React.Component {
                                             'cell-sm': hasSocial && !_.isEmpty(socialLinks)
                                         })}
                                     >
-                                        {copyright && <span data-sb-field-path=".copyright">{htmlToReact(copyright)}</span>}
+                                        {copyright && <span data-sb-field-path=".content">{htmlToReact(copyright)}</span>}
                                         {_.map(links, (action, index) => (
                                             <ActionLink key={index} action={action} />
                                         ))}

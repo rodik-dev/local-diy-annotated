@@ -98,7 +98,7 @@ export default class GridItem extends React.Component {
                                             'mx-auto': imageAlignX === 'center',
                                             'ml-auto': imageAlignX === 'right'
                                         })}
-                                        data-sb-field-path=".image#@src"
+                                        data-sb-field-path=".image.url#@src"
                                     />
                                 </div>
                             </div>

@@ -18,9 +18,11 @@ export default class BlogPostAuthor extends React.Component {
         const authorFirstName = author.first_name || '';
         const authorLastName = author.last_name || '';
 
+        const annotationPrefix = this.props.annotationPrefix;
+
         if (author.link) {
             return (
-                <div className={containerClass} data-sb-field-path=".author">
+                <div className={containerClass} data-sb-field-path={annotationPrefix}>
                     <Link className="flex items-center" href={withPrefix(author.link)}>
                         {authorAvatar && (
                             <figure
