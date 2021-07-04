@@ -32,7 +32,7 @@ export default class BlogPostCategories extends React.Component {
         const categoryLength = _.size(categories);
         const containerClass = _.get(this.props, 'containerClass', '');
 
-        const annotationPrefix = this.props.annotationPrefix;
+        const annotationPrefix = _.get(this.props, 'annotationPrefix', '');
 
         return (
             <span className={containerClass} data-sb-field-path={annotationPrefix}>

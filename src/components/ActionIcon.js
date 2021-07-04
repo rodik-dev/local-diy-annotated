@@ -30,7 +30,7 @@ export default class ActionIcon extends React.Component {
             attrs.rel = [(newWindow ? 'noopener' : ''), (noFollow ? 'nofollow' : '')].filter(Boolean).join(' ');
         }
 
-        const annotationPrefix = this.props.annotationPrefix;
+        const annotationPrefix = _.get(this.props, 'annotationPrefix', '');
 
         return (
             <Link href={withPrefix(url)} {...attrs} className={classes} data-sb-field-path={`${annotationPrefix}.label#span[1] ${annotationPrefix}.icon#svg[1]`}>

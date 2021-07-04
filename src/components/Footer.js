@@ -71,7 +71,7 @@ export default class Footer extends React.Component {
                                     >
                                         {copyright && <span data-sb-field-path=".content">{htmlToReact(copyright)}</span>}
                                         {_.map(links, (action, index) => (
-                                            <ActionLink key={index} action={action} />
+                                            <ActionLink key={index} action={action} annotationPrefix={`.links.${index}`} />
                                         ))}
                                     </div>
                                 )}

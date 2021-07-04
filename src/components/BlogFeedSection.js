@@ -104,7 +104,7 @@ export default class BlogFeedSection extends React.Component {
                                     'card__media--top': isCard
                                 })}
                             >
-                                <Link href={postUrl}><img src={withPrefix(image)} alt={imageAlt} data-sb-field-path="image.url#@src"/></Link>
+                                <Link href={postUrl}><img src={withPrefix(image)} alt={imageAlt} data-sb-field-path="thumb_image.url#@src"/></Link>
                             </div>
                         )}
                         <div
@@ -118,7 +118,7 @@ export default class BlogFeedSection extends React.Component {
                             })}
                         >
                             {(showDate || (!_.isEmpty(categories) && showCategories)) && (
-                                <div className="item__meta mb-1">
+                                <div className="item__meta mb-1" data-sb-field-path="show_date show_categories">
                                     {!_.isEmpty(categories) && showCategories && (
                                         <React.Fragment>
                                             <BlogPostCategories categories={categories} data={data} containerClass={'item__cat'} annotationPrefix="categories" />

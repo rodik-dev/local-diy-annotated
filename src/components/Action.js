@@ -37,7 +37,6 @@ export default class Action extends React.Component {
             `${annotationPrefix}.url#@href`,
             `${annotationPrefix}.style#@class`,
             `${annotationPrefix}.has_icon#@class`,
-            `${annotationPrefix}.icon_position#@class`,
             `${annotationPrefix}.label${showIcon ? '#span[1]' : ''}`
         ];
         if (showIcon) { annotations.push(`${annotationPrefix}.icon#svg[1]`) }

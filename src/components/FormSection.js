@@ -112,7 +112,7 @@ export default class FormSection extends React.Component {
                                     'p-4': isCard,
                                     'p-sm-5': isCard
                                 })}
-                                data-sb-field-path=".form_id#@name"
+                                data-sb-field-path=".form_id#@name .form_layout#@class .enable_card#@class"
                             >
                                 <div className="sr-only">
                                     <label id={formHoneypotLabelId} htmlFor={formHoneypotInputId}>Don't fill this out if you're human:</label>
@@ -136,7 +136,7 @@ export default class FormSection extends React.Component {
                                                     'mb-xs-0': formLayout === 'inline',
                                                     'flex-auto': formLayout === 'inline'
                                                 })}
-                                                data-sb-field-path={`.${index} .${index}.input_type`}
+                                                data-sb-field-path={`.${index} .${index}.input_type .${index}.is_required`}
                                             >
                                                 <FormField field={field} />
                                             </div>
@@ -149,7 +149,7 @@ export default class FormSection extends React.Component {
                                             'ml-xs-1': formLayout === 'inline'
                                         })}
                                     >
-                                        <button type="submit" className="btn btn--primary">{submitLabel}</button>
+                                        <button type="submit" className="btn btn--primary" data-sb-field-path=".submit_label">{submitLabel}</button>
                                     </div>
                                 </div>
                             </form>

@@ -77,6 +77,7 @@ export default class Announcement extends React.Component {
                                 aria-label="Close"
                                 className="btn btn--icon btn--clear js-announcment-close"
                                 onClick={this.handleAnncmntClose.bind(this)}
+                                data-sb-field-path=".anncmnt_has_close"
                             >
                                 <Icon icon={'close'} />
                                 <span className="sr-only">Close</span>

@@ -18,7 +18,7 @@ export default class BlogPostAuthor extends React.Component {
         const authorFirstName = author.first_name || '';
         const authorLastName = author.last_name || '';
 
-        const annotationPrefix = this.props.annotationPrefix;
+        const annotationPrefix = _.get(this.props, 'annotationPrefix', '');
 
         if (author.link) {
             return (
@@ -30,7 +30,7 @@ export default class BlogPostAuthor extends React.Component {
                                     'avatar--small': avatarSize === 'small'
                                 })}
                             >
-                                <img className="avatar__img" src={withPrefix(authorAvatar)} alt={authorAvatarAlt} data-sb-field-path=".photo"/>
+                                <img className="avatar__img" src={withPrefix(authorAvatar)} alt={authorAvatarAlt} data-sb-field-path=".photo.url#@src"/>
                             </figure>
                         )}
                         <span data-sb-field-path=".first_name .last_name">{_.trim(`${authorFirstName} ${authorLastName}`)}</span>
@@ -47,7 +47,7 @@ export default class BlogPostAuthor extends React.Component {
                                     'avatar--small': avatarSize === 'small'
                                 })}
                             >
-                                <img className="avatar__img" src={withPrefix(authorAvatar)} alt={authorAvatarAlt} data-sb-field-path=".photo"/>
+                                <img className="avatar__img" src={withPrefix(authorAvatar)} alt={authorAvatarAlt} data-sb-field-path=".photo.url#@src"/>
                             </figure>
                         )}
                         <span data-sb-field-path=".first_name .last_name">{_.trim(`${authorFirstName} ${authorLastName}`)}</span>
