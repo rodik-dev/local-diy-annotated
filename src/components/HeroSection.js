@@ -87,7 +87,8 @@ export default class HeroSection extends React.Component {
                             >
                                 {title && <h1 className="hero__title" data-sb-field-path=".title">{title}</h1>}
                                 {subtitle && <p className="hero__subtitle" data-sb-field-path=".subtitle">{subtitle}</p>}
-                                {content && <div className="hero__copy" data-sb-field-path=".content">{markdownify(content)}</div>}
+                                {content && <
+                                    div className="hero__copy" data-sb-field-path=".content">{markdownify(content)}</div>}
                                 {!_.isEmpty(actions) && (
                                     <div
                                         className={classNames('hero__actions', 'btn-group', {
